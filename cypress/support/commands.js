@@ -25,8 +25,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-
-
 Cypress.Commands.add('login', (email, password) => {
     cy.contains('Log in')
       .click()
@@ -68,6 +66,4 @@ Cypress.Commands.add('addBookToFavorites', (book) => {
       .click()
     cy.get('h4')
       .click()
-    cy.get('.card-title')
-      .contains(book.title)
 })

@@ -9,10 +9,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "cy:run mobile": "cypress run --env -mobile",
-    "cy:open mobile": "cypress open --env -mobile",
-    "cy:run laptop": "cypress run --env -laptop",
-    "cy:open laptop": "cypress open --env -laptop"
+    "cy:run:mobile": "cypress run --env --config './cypress.mobile.config.js'",
+    "cy:open:mobile": "cypress open --env --config './cypress.mobile.config.js'",
+    "cy:run:laptop": "cypress run",
+    "cy:open:laptop": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"

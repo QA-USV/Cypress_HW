@@ -1,7 +1,5 @@
 /* eslint-disable no-undef */
 
-const { beforeEach } = require("mocha")
-
 const user = {
   email: 'test@test.com', 
   password: 'test'
@@ -21,7 +19,7 @@ const book = {
 describe('Books list app tests, login steps', () => {
   beforeEach (() => {
     cy.visit('/')
-    cy.viewport('iphone-xr')
+    // cy.viewport('iphone-xr')
   })
 
   it('opens a start web page first', () => {
@@ -50,7 +48,7 @@ describe('Books list app tests, login steps', () => {
 describe('Books list app tests, books manipulations', () => {
   beforeEach (() => {
     cy.visit('/')
-    cy.viewport('macbook-15')
+    // cy.viewport('macbook-15')
     cy.login(user.email, user.password)
     cy.addNewBook(book)
   })
@@ -62,12 +60,12 @@ describe('Books list app tests, books manipulations', () => {
 
   it('should add a book to favorites', () => {
     cy.addBookToFavorites(book)
+    cy.get('.card-title')
+      .contains(book.title)
   })
   
   it('should delete a book from favorites', () => {
     cy.addBookToFavorites(book)      
-    cy.get('.card-title')
-      .contains(book.title)
     cy.get('.card-footer > .btn')
       .contains('Delete from favorite')
       .click()
