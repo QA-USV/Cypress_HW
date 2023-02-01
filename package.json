@@ -9,10 +9,19 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "cy:run:mobile": "cypress run --env --config './cypress.mobile.config.js'",
-    "cy:open:mobile": "cypress open --env --config './cypress.mobile.config.js'",
-    "cy:run:laptop": "cypress run",
-    "cy:open:laptop": "cypress open"
+    "cy:run:mobile:chrome": "cypress run --env --config './cypress.mobile.config.js' -b chrome",
+    "cy:run:mobile:edge": "cypress run --env --config './cypress.mobile.config.js' -b edge",
+    "cy:run:mobile:electron": "cypress run --env --config './cypress.mobile.config.js' -b electron",
+    "cy:open:mobile:chrome": "cypress open --env --config './cypress.mobile.config.js' -b chrome",
+    "cy:open:mobile:edge": "cypress open --env --config './cypress.mobile.config.js' -b edge",
+    "cy:open:mobile:electron": "cypress open --env --config './cypress.mobile.config.js' -b electron",
+    "cy:run:laptop:chrome": "cypress run -b chrome",
+    "cy:run:laptop:edge": "cypress run -b edge",
+    "cy:run:laptop:electron": "cypress run -b electron",
+    "cy:open:laptop:chrome": "cypress open -b chrome",
+    "cy:open:laptop:edge": "cypress open -b edge",
+    "cy:open:laptop:electron": "cypress open -b electron"
+
   },
   "eslintConfig": {
     "extends": "react-app"
