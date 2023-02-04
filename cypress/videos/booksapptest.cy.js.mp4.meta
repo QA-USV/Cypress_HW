@@ -1,0 +1,41 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=6171
+END=8343
+title=Books list app tests, login steps opens a start web page first
+[CHAPTER]
+TIMEBASE=1/1000
+START=-14901
+END=10534
+title=Books list app tests, login steps should not login with wrong email
+[CHAPTER]
+TIMEBASE=1/1000
+START=10325
+END=36025
+title=Books list app tests, login steps should not login with wrong password
+[CHAPTER]
+TIMEBASE=1/1000
+START=34703
+END=61739
+title=Books list app tests, login steps should successfully logins
+[CHAPTER]
+TIMEBASE=1/1000
+START=54432
+END=88805
+title=Books list app tests, books manipulations should add new book
+[CHAPTER]
+TIMEBASE=1/1000
+START=83355
+END=123192
+title=Books list app tests, books manipulations should add a book to favorites
+[CHAPTER]
+TIMEBASE=1/1000
+START=120750
+END=163045
+title=Books list app tests, books manipulations should delete a book from favorites
+[CHAPTER]
+TIMEBASE=1/1000
+START=168958
+END=205382
+title=Books list app tests, books manipulations book should be available for downloading from "favorites" page
